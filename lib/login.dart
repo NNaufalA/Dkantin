@@ -1,3 +1,4 @@
+import 'package:dikantin_mobile/home.dart';
 import 'package:dikantin_mobile/register.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -112,10 +113,9 @@ class LoginPage extends StatelessWidget {
                           backgroundColor: Color(0xFF4EB2E7),
                         ),
                         onPressed: () {
-                          Navigator.pushReplacement(
+                          Navigator.push(
                             context,
-                            MaterialPageRoute(
-                                builder: (context) => BoardingPage()),
+                            MaterialPageRoute(builder: (context) => HomePage()),
                           );
                         },
                         child: const Text(
